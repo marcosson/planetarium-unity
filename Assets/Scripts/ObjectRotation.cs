@@ -3,12 +3,12 @@ using System.Collections;
 using Assets.Scripts;
 
 public class ObjectRotation : MonoBehaviour {
-    
-    string planetName;
-    float rotationSpeed, planetSpeed;
-    PlanetariumSettings planetariumSettings;
-    Transform planetTransform;
-    IPlanet planet;
+
+    private string planetName;
+    private float rotationSpeed, planetSpeed;
+    private PlanetariumSettings planetariumSettings;
+    private Transform planetTransform;
+    private IPlanet planet;
 
 	// Use this for initialization
 	void Start () {

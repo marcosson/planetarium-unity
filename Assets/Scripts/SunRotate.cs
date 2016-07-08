@@ -3,9 +3,9 @@ using System.Collections;
 
 public class SunRotate : MonoBehaviour {
 
-    PlanetariumSettings planetariumSettings;
-    Transform sunTransform;
-    float rotationSpeed, sunSpeed;
+    private PlanetariumSettings planetariumSettings;
+    private Transform sunTransform;
+    private float rotationSpeed, sunSpeed;
 
     // Use this for initialization
     void Start()

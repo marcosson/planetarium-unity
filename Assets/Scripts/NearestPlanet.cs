@@ -6,16 +6,16 @@ using UnityEngine.UI;
 
 public class NearestPlanet : MonoBehaviour {
 
-    bool autopilotEnabled = false;
-    string[] planetsName = new string[] { "Sun", "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" };
-    float[] planetsRadius = new float[9];
-    float[] distances = new float[9];
-    float[] planetsAtmosphere = new float[9];
-    Transform spaceshipTransform, planetTransform;
-    Transform[] planetsTransform = new Transform[9];
-    IPlanet planet;
-    Text textPlanet, textMass, textDiameter, textGravity, textMeanTemperature, textNMoons, textOrbital, textRotation;
-    GameObject infoPanel;
+    private bool autopilotEnabled = false;
+    private string[] planetsName = new string[] { "Sun", "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" };
+    private float[] planetsRadius = new float[9];
+    private float[] distances = new float[9];
+    private float[] planetsAtmosphere = new float[9];
+    private Transform spaceshipTransform, planetTransform;
+    private Transform[] planetsTransform = new Transform[9];
+    private IPlanet planet;
+    private Text textPlanet, textMass, textDiameter, textGravity, textMeanTemperature, textNMoons, textOrbital, textRotation;
+    private GameObject infoPanel;
 
     // Use this for initialization
     void Start () {

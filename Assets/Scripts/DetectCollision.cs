@@ -6,19 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class DetectCollision : MonoBehaviour {
 
-    float distance;
-    bool played = false;
-    bool autopilotEnabled;
-    string[] planetsName = new string[] { "Sun", "Mercury", "Venus", "Earth", "Moon", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" };
-    float[] planetsRadius = new float[10];
-    float[] planetsAtmosphere = new float[10];
-    bool[] collisions = new bool[10];
+    private float distance;
+    private bool played = false;
+    private bool autopilotEnabled;
+    private string[] planetsName = new string[] { "Sun", "Mercury", "Venus", "Earth", "Moon", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" };
+    private float[] planetsRadius = new float[10];
+    private float[] planetsAtmosphere = new float[10];
+    private bool[] collisions = new bool[10];
     public AudioClip alarmAudioClip;
     public AudioSource alarmAudio;
-    Transform[] planetsTransform = new Transform[10];
-    Transform planetTransform, spaceshipTransform;
-    GameObject UI;
-    Canvas canvas;
+    private Transform[] planetsTransform = new Transform[10];
+    private Transform planetTransform, spaceshipTransform;
+    private GameObject UI;
+    private Canvas canvas;
 
 	// Use this for initialization
 	void Start () {

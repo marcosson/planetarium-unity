@@ -5,29 +5,27 @@ using System.Collections;
 
 public class Autopilot : MonoBehaviour
 {
-    float distance, alpha, deltaTangent;
-    float fixedDistance = 0f;
-    float rotationSpeed = 50f;
-    int indexPlanet, indexCollidingPlanet;
-    bool rotating = true;
-    bool justCollided = false;
-    bool planetSelected = false;
-    bool gotDirection = false;
-    bool rotateRight;
+    private float distance, alpha, deltaTangent;
+    private float fixedDistance = 0f;
+    private float rotationSpeed = 50f;
+    private int indexPlanet, indexCollidingPlanet;
+    private bool rotating = true;
+    private bool justCollided = false;
+    private bool planetSelected = false;
+    private bool gotDirection = false;
+    private bool rotateRight;
     public bool autopilotEnabled;
-    string selectedPlanet;
-    float[] planetsAtmosphere = new float[9];
-    float[] planetsRadius = new float[9];
-    bool[] collisions = new bool[9];
-    string[] planetsName = new string[] { "Sun", "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" };
-    Transform spaceshipTransform, planetTransform;
-    Rigidbody spaceshipRigidbody;
-    Transform[] planetsTransform = new Transform[9];
-    Toggle enableAutopilot;
-    Vector3 target;
-
-    Vector3 eulerAngleVelocity;
-    Dropdown dropdownSelectPlanet;
+    private string selectedPlanet;
+    private float[] planetsAtmosphere = new float[9];
+    private float[] planetsRadius = new float[9];
+    private bool[] collisions = new bool[9];
+    private string[] planetsName = new string[] { "Sun", "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" };
+    private Transform spaceshipTransform, planetTransform;
+    private Rigidbody spaceshipRigidbody;
+    private Transform[] planetsTransform = new Transform[9];
+    private Toggle enableAutopilot;
+    private Vector3 target;
+    private Dropdown dropdownSelectPlanet;
 
     // Use this for initialization
     void Start()

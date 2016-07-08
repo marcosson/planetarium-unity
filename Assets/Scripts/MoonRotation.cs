@@ -3,9 +3,9 @@ using System.Collections;
 
 public class MoonRotation : MonoBehaviour {
 
-    float rotationSpeed, moonSpeed;
-    PlanetariumSettings planetariumSettings;
-    Transform moonTransform;
+    private float rotationSpeed, moonSpeed;
+    private PlanetariumSettings planetariumSettings;
+    private Transform moonTransform;
 
 	// Use this for initialization
 	void Start () {

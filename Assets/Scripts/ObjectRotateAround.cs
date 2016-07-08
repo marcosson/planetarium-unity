@@ -5,13 +5,13 @@ using Assets.Scripts;
 
 public class ObjectRotateAround : MonoBehaviour {
 
-    string planetName;
-    PlanetariumSettings planetariumSettings;
-    Transform planetTransform;
-    float rotationSpeed, planetOrbitalSpeed, planetAngularSpeed, planetEccentricity, normalizedSemiMajorAxis,
+    private string planetName;
+    private PlanetariumSettings planetariumSettings;
+    private Transform planetTransform;
+    private float rotationSpeed, planetOrbitalSpeed, planetAngularSpeed, planetEccentricity, normalizedSemiMajorAxis,
         normalizedSemiMinorAxis, normalizedCenter;
-    float planetAlpha = 0.0f;
-    IPlanet planet;
+    private float planetAlpha = 0.0f;
+    private IPlanet planet;
 
     // Use this for initialization
     void Start () {
