@@ -79,3 +79,7 @@ Makes the Sun rotate around its own axis according to the real time data (unless
 
 ## SwitchCamera.cs
 Switch between the third person camera (default one at the beginning) and the first person camera. In both configurations the user can do the same actions and its selection will remain even if he moves the spaceship or enables the autopilot.
+
+# Credits
+- Arcadia's 3D model made by [DocMikeB](http://docmikeb.deviantart.com/art/Harlock-s-Arcadia-209167000)
+- Nasalization font by [typodermicfonts](http://typodermicfonts.com/nasalization/)
